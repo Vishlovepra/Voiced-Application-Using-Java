@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/BackgroundColor"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="379dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toTopOf="@+id/fileNameEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opnbtn"
+        app:layout_constraintVertical_bias="0.767"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/create" />
+
+    <EditText
+        android:id="@+id/fileNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:autofillHints="Filename..."
+        android:fontFamily="monospace"
+        android:hint="File Name..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opnbtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createFolderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="monospace"
+        android:hint="Create"
+        android:shadowRadius="@integer/material_motion_duration_medium_1"
+        android:textColorHint="#E1D2D2"
+        android:textColorLink="#FFFCFC"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fileNameEt" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view1"
+        android:layout_width="358dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/open" />
+
+    <EditText
+        android:id="@+id/opn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:autofillHints="Filename..."
+        android:fontFamily="monospace"
+        android:hint="Open..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/opnbtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:hint="OPEN"
+        android:shadowRadius="@integer/material_motion_duration_medium_1"
+        android:textColorHint="#E1D2D2"
+        android:textColorLink="#FFFCFC"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
